@@ -369,6 +369,22 @@ html {
   color: #000000;
 }
 
+.titulo {
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+.parrafo {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.parrafo_lente {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 /* @MIXIN */
 /* ********** */
 /* @BOTONES */
@@ -385,8 +401,8 @@ html {
   width: clamp(300px, 100vw, 1920px);
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[3];
-  grid-template-rows: repeat(3, 1fr);
+  -ms-grid-rows: 800px 1fr 900px;
+  grid-template-rows: 800px 1fr 900px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -394,7 +410,7 @@ html {
       align-content: center;
 }
 
-header {
+header, main {
   width: clamp(300px, 100vw, 1920px);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,6 +431,20 @@ header {
   grid-row-gap: 0.5rem;
 }
 
+.gridFooterSup {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__formulario {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.5rem;
+  padding: 1rem;
+}
+
 /* @FORMULARIOS */
 /* ********** */
 /* @NAVEGACIÓN */
@@ -433,7 +463,7 @@ header {
 .header__compra {
   background-color: #F2624A;
   color: #FFFFFF;
-  width: 130px;
+  display: inline-block;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -480,8 +510,63 @@ header {
   width: 90%;
 }
 
+/* @CONTENIDO MAIN */
+/* ********** */
+.main__lente {
+  background-color: #F8F6EE;
+  padding: 0;
+}
+
 /* @FOOTER */
 /* ********** */
+footer {
+  background-color: #C4C4C4;
+}
+
+.lista {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000000;
+  display: block;
+  padding: 0.90625rem;
+  margin: 0.5rem;
+}
+
+.redes {
+  border: solid black;
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__formulario {
+  text-align: center;
+}
+
+.footer__formulario__email {
+  padding: 0.90625rem;
+  width: 90%;
+}
+
+.boton {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  padding: 0.90625rem;
+  font-size: 1.125rem;
+  background-color: #F2624A;
+  color: #FFFFFF;
+  border-radius: 50px;
+  width: 90%;
+}
+
+.footer__redes, h6 {
+  text-align: center;
+}
+
 /* @HOME */
 /* ********** */
 /* @CONTACTAR */

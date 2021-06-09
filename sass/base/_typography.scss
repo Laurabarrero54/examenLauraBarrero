@@ -5,3 +5,19 @@ html{
     font-family: Arial, Helvetica, sans-serif;
     color: map-get($colores, tipo);
 }
+
+.titulo{
+    font-size: $subtitle;
+    font-weight: 900;
+}
+
+.parrafo{
+    font-size: $parrafo;
+    font-weight: 400;
+}
+
+.parrafo_lente{
+    font-size: $subtitle;
+    font-weight: 700;
+    text-align: center;
+}

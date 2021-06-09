@@ -1,2 +1,51 @@
 /* @FOOTER */
 /* ********** */
+
+footer{
+    background-color: map-get($colores, fondoFooter);
+}
+
+
+
+
+.lista{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: $parrafo;
+    font-weight: 400;
+    color: map-get($colores, tipo);
+    display: block;
+    padding: map-get($paddings, botonSmart); 
+    margin: 0.5rem;
+}
+
+
+.redes{
+    border: solid black;
+    display: inline-block;
+    align-self: center;
+}
+
+.footer__formulario{
+    text-align: center;
+}
+.footer__formulario__email{
+    padding: map-get($paddings, botonSmart);  
+    width: 90%;
+
+}
+.boton{
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: map-get($paddings, botonSmart);    
+    font-size: $subtitle;
+    background-color: map-get($colores, fondoboton);
+    color: map-get($colores, botonTipo);
+    border-radius: 50px;
+    width: 90%;
+}
+
+.footer__redes, h6{
+    text-align: center;
+}

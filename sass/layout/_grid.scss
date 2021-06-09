@@ -3,12 +3,12 @@
 .contenido{
     width: clamp(300px, 100vw, 1920px);
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 800px 1fr 900px;
     justify-content: center;
     align-content: center;
 }
 
-header{
+header, main{
     width: clamp(300px, 100vw, 1920px);
     display: flex;
     flex-direction: column;
@@ -22,4 +22,14 @@ header{
     grid-row-gap: .5rem;
 }
 
+.gridFooterSup{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__formulario{
+    display: grid;
+    grid-gap: 0.5rem;
+    padding: map-get($paddings, headerSmart);
+}
 
