@@ -1,2 +1,37 @@
 /* @VARIABLES */
 /* ********** */
+
+// colores
+$colores:(
+    fondoFooter: #C4C4C4,
+    fondoHeader: #FFE6D1,
+    fondoMain: #F8F6EE,
+    fondoboton: #F2624A,
+    botonTipo: #FFFFFF,
+    tipo: #000000
+);
+
+//tipografía
+
+$logoSmart: 3.875rem;
+$logoDesk: 6.8125rem;
+$subtitle: 1.125rem;
+$parrafo: 1rem;
+
+//tamaños
+
+$breakpoints:(
+    smartphone: 320px,
+    desktop: 1000px
+);
+
+$borderRadius:(
+    header: 50px,
+    footer: 25px
+);
+
+$paddings:(
+    headerSmart: 1rem,
+    botonSmart: .90625rem,
+    botonDesk: .625rem
+);

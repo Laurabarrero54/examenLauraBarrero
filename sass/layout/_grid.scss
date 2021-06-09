@@ -1,4 +1,25 @@
 /* @GRIDS */
 /* ********** */
+.contenido{
+    width: clamp(300px, 100vw, 1920px);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+}
+
+header{
+    width: clamp(300px, 100vw, 1920px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: map-get($paddings, headerSmart);
+}
+
+
+.gridMenu{
+    display: grid;
+    grid-row-gap: .5rem;
+}
 
 

@@ -1,2 +1,49 @@
 /* @HEADERS */
 /* ********** */
+
+.header__compra, .header__productos, .header__servicios{
+    text-decoration: none;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+    padding: map-get($paddings, botonSmart);    
+    font-size: $subtitle;
+}
+
+.header__compra{
+    background-color: map-get($colores, fondoboton);
+    color: map-get($colores, botonTipo);
+    width:130px;
+    align-self: center;
+}
+
+
+.header__productos, .header__servicios{
+    background-color: map-get($colores, fondoHeader);
+    color: map-get($colores, tipo);
+}
+
+.header__imgCamara{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:map-get($colores, fondoHeader);
+}
+
+.header__logo{
+    align-self: center;
+    font-size: $logoSmart;
+}
+
+.header__imgCamara__boton{
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: map-get($paddings, botonSmart);    
+    font-size: $subtitle;
+    background-color: map-get($colores, fondoboton);
+    color: map-get($colores, botonTipo);
+    border-radius: 0px 50px 50px 0px;
+    width: 90%;
+}
